@@ -3,6 +3,8 @@ import styled from 'styled-components/native';
 //scrollView apos header, exibe as sugestoes
 //funcao attrs retorna um objeto, para passar configs
 export const Container = styled.ScrollView.attrs(() => ({
+  //tira barra de rolagem
+  showsHorizontalScrollIndicator: false,
   //rolagem horizontal
   horizontal: true,
   contentContainerStyle: {
