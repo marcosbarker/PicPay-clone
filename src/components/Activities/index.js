@@ -1,7 +1,7 @@
 import React from 'react';
-import {CardFooter, Value, Details, Container, Header, Card, CardHeader, 
-        Title, Avatar, Description,  Bold, CardBody, UserName} from './style';
-
+import {Option, OptionLabel, Actions, Divider, CardFooter, Value, Details, Container, Header, Card, CardHeader, 
+        Title, Avatar, Description, Date, Bold, CardBody, UserName} from './style';
+import { Feather, AntDesign, MaterialCommunityIcons } from '@expo/vector-icons';        
 import avatar from '../../assets/images/avatar.png'
 
 export default function Activities() {
@@ -28,9 +28,31 @@ export default function Activities() {
         <CardFooter>
           <Details>
             <Value>R$ 387,00</Value>
-          </Details>
-        </CardFooter>
 
+            <Divider />
+
+            <Feather name="lock" color="white" size={17} />
+            <Date>há <Bold>3</Bold> dias</Date>
+          </Details>
+          <Actions>
+            <Option>
+              <MaterialCommunityIcons 
+                size={20} 
+                color="white" 
+                name="comment-outline"
+              />
+              <OptionLabel>8</OptionLabel>
+            </Option>
+            <Option>
+              <AntDesign 
+                size={20} 
+                color="white" 
+                name="hearto"
+              />
+              <OptionLabel>4</OptionLabel>
+            </Option>
+          </Actions>
+        </CardFooter>
       </Card>
     </Container>
   );

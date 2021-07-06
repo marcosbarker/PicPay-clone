@@ -48,8 +48,47 @@ export const CardHeader = styled.View`
   align-items: center;
 `;
 
-export const CardFooter = styled.View``;
+export const CardFooter = styled.View`
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 15px;
+`;
 
-export const Details = styled.View``;
+export const Details = styled.View`
+  align-items: center;
+  flex-direction: row;
+`;
 
-export const Value = styled.Text``;
+export const Value = styled.Text`
+  font-size: 14px;
+  font-weight: bold;
+  color: #f75175;
+`;
+
+export const Divider = styled.View`
+  background: grey;
+  margin: 0 10px;
+  width: 2px;
+  height: 12px;  
+`;
+
+export const Date = styled.Text`
+  margin-left: 7px;
+  color: white;
+  font-size: 14px;
+`;
+
+export const Option = styled.TouchableOpacity`
+  flex-direction: row;
+  margin-left: 12px;
+`;
+
+export const OptionLabel = styled.Text`
+  font-size: 14px;
+  color: white;
+  margin-left: 3px;
+`;
+
+export const Actions = styled.View`
+  flex-direction: row;
+`;
