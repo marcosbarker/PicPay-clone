@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Option, Label, Img } from './style';
 
-import cel1 from '../../assets/cel.png'
+import img1 from '../../assets/images/01.png';
 
 export default function Suggestions() {
   return (
     <Container>
       <Option>
-        <Img source={cel1} />
+        <Img source={img1} />
         <Label>Doações</Label>
       </Option>
     </Container>
