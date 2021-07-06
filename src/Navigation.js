@@ -5,6 +5,7 @@ import { AntDesign, Ionicons} from '@expo/vector-icons';
 import HomePages from './pages/Home';
 import FinancePages from './pages/Finance';
 import PayPages from './pages/Pay';
+import PayButton from './components/PayButton';
 
 const Tab = createBottomTabNavigator();
 
@@ -16,10 +17,6 @@ const icons = {
   Finance: {
     lib: AntDesign,
     name: 'creditcard',
-  },
-  Pay: {
-    lib: AntDesign,
-    name: 'home',
   },
   Notifications: {
     lib: Ionicons,
@@ -34,8 +31,18 @@ const icons = {
 export default function Navigation() {
   return (
     <Tab.Navigator
-      screenOptions={({route}) => ({
-        tabBarIcon: ({color, size}) => {
+      screenOptions={({route, navigation}) => ({
+        tabBarIcon: ({color, size, focused}) => {
+
+          if (route.name === 'Pay') {
+            return(
+              <PayButton 
+                onPress={() => navigation.navigate('Pay')}
+                focused={focused}
+              />
+            );
+          }
+
           const {lib: Icon, name} = icons[route.name];
           return <Icon name={name} size={size} color={color} />;
         }, 
@@ -61,7 +68,7 @@ export default function Navigation() {
       />
       <Tab.Screen name="Pay" component={PayPages}
         options={{
-          title: 'Pagar',
+          title: '',
          }} 
       />
       <Tab.Screen name="Notifications" component={PayPages}
