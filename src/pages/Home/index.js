@@ -2,6 +2,7 @@ import React from 'react';
 import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons'
 import { Wrapper, Header, Balance, BalanceTitle, BalanceContainer, Container } from './style';
 import Suggestions from '../../components/Suggestions';
+import Activities from '../../components/Activities';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         </Header>
 
         <Suggestions />
+        <Activities />
 
       </Container>
     </Wrapper>
