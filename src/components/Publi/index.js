@@ -10,7 +10,7 @@ const items = [
   {
     ke: String(Math.random()),
     img: img8,
-    title: 'Pague suas contas sem sair de casa',
+    title: 'Cadastre sua chave Pix no PicPay',
     bgColor: '#172c4a' 
   },
   {
@@ -22,19 +22,19 @@ const items = [
   {
     ke: String(Math.random()),
     img: img10,
-    title: 'Pague suas contas sem sair de casa',
+    title: 'Peça agora seu Empréstimo Pessoal!',
     bgColor: '#4139c8' 
   },
   {
     ke: String(Math.random()),
     img: img11,
-    title: 'Pague suas contas sem sair de casa',
+    title: 'Convide um amigo',
     bgColor: '#00ab4b' 
   },
   {
     ke: String(Math.random()),
     img: img12,
-    title: 'Pague suas contas sem sair de casa',
+    title: 'Aqui o Auxílio Emergencial é na hora!',
     bgColor: '#ba2f76' 
   }
 ];

@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { AntDesign, Ionicons} from '@expo/vector-icons';
+import { AntDesign, Ionicons, SimpleLineIcons } from '@expo/vector-icons';
 
 import HomePages from './pages/Home';
 import FinancePages from './pages/Finance';
@@ -22,9 +22,9 @@ const icons = {
     lib: Ionicons,
     name: 'ios-notifications-outline',
   },
-  Settings: {
-    lib: AntDesign,
-    name: 'setting',
+  Store: {
+    lib: SimpleLineIcons ,
+    name: 'bag',
   }
 };
 
@@ -76,9 +76,9 @@ export default function Navigation() {
           title: 'Notificações',
          }} 
       />
-      <Tab.Screen name="Settings" component={PayPages}
+      <Tab.Screen name="Store" component={PayPages}
         options={{
-          title: 'Ajustes',
+          title: 'Store',
          }} 
       />
     </Tab.Navigator>

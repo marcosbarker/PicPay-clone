@@ -13,7 +13,7 @@ const items = [
   {
     key: String(Math.random()),
     img: img1, 
-    label: 'Recarga',
+    label: 'Recarga de Celular',
   },
   {
     key: String(Math.random()),
@@ -23,7 +23,7 @@ const items = [
   {
     key: String(Math.random()),
     img: img3, 
-    label: 'Ônibus',
+    label: 'Cartão de Transporte',
   },
   {
     key: String(Math.random()),
@@ -43,7 +43,7 @@ const items = [
   {
     key: String(Math.random()),
     img: img7, 
-    label: 'Investimento',
+    label: 'Cobrar',
   },
 ];
 

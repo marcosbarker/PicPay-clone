@@ -9,6 +9,7 @@ export const Container = styled.View`
   height: 120px;
   margin-top: 20px;
   margin-left: 14px;
+  margin-right: 14px;
 `;
 
 export const Img = styled.Image``;
