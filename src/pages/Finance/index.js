@@ -9,19 +9,30 @@ import { UseTicketButton, Container, AddButton, AddButton2, AddLabel,
 import credicard from '../../assets/images/credit-card.png'
 import { Feather, FontAwesome5, FontAwesome, MaterialCommunityIcons,
          AntDesign } from '@expo/vector-icons';
+import { isEnabled } from 'react-native/Libraries/Performance/Systrace';
 
 export default function Finance() {
+  //visibilidade do saldo
   const [isVisible, setVisible] = useState(true);
-
   //troca de estado baseado no estado atual
   function visibilityMoney() {
     setVisible((prevState) => !prevState);
+  }
+  //uso do dinheiro do saldo em conta
+  const [useMoneyBalance, setMoneyBalance] = useState(true);
+  function switchToggleBalance() {
+    setMoneyBalance((prevState) => !prevState);
   }
 
   return (
     <Wrapper>
       <Container>
-        <Header colors={['#52E78C', '#1AB563']}>
+        <Header 
+          colors={
+            useMoneyBalance
+              ?['#52E78C', '#1AB563']
+              :['#D3D3D3','#868686']
+            }>
           <HeaderContainer>
             <Title>Saldo disponível</Title>
             <BalanceContainer>
@@ -63,7 +74,14 @@ export default function Finance() {
           <UseBalanceTitle>
             Usar saldo em carteira ao pagar
           </UseBalanceTitle>
-          <Switch />
+
+          <Switch
+            onValueChange={switchToggleBalance}
+            value={useMoneyBalance}
+            trackColor={{false: "grey", true: "#52E78C"}}
+            thumbColor={useMoneyBalance ? "#1AB563" : "white"}
+          />
+
         </UseBalance>
         <FormsPay>
           <FormsPayTitle>
