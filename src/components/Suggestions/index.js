@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Option, Label, Img } from './style';
+import { Container, Option, Label, Img, ImgPosition } from './style';
 
 import img1 from '../../assets/images/01.png';
 import img2 from '../../assets/images/02.png';
@@ -52,7 +52,9 @@ export default function Suggestions() {
     <Container>
       {items.map((item) => 
         <Option key={item.key}>
-          <Img source={item.img} />
+          <ImgPosition>
+            <Img source={item.img} />
+          </ImgPosition>
           <Label>{item.label}</Label>
         </Option>
       )}
