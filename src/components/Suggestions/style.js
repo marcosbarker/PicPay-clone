@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-//scrollView apos header, exibe as sugestoes
+//scrollView apos header, exibe os servicos
 //funcao attrs retorna um objeto, para passar configs
 export const Container = styled.ScrollView.attrs(() => ({
   //tira barra de rolagem
