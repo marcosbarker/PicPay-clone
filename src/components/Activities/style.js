@@ -9,6 +9,9 @@ export const Header = styled.View`
 `;
 
 export const Avatar = styled.Image`
+  border-radius: 100;
+  width: 80px;
+  height: 80px;
 `;
 
 export const CardBody = styled.View`

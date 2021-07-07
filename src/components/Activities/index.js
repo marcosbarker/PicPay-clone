@@ -2,7 +2,7 @@ import React from 'react';
 import {Option, OptionLabel, Actions, Divider, CardFooter, Value, Details, Container, Header, Card, CardHeader, 
         Title, Avatar, Description, Date, Bold, CardBody, UserName} from './style';
 import { Feather, AntDesign, MaterialCommunityIcons } from '@expo/vector-icons';        
-import avatar from '../../assets/images/avatar.png'
+import avatar from '../../assets/images/avatar1.png'
 
 export default function Activities() {
   return (
@@ -17,12 +17,12 @@ export default function Activities() {
             source={avatar}
           />
           <Description>
-            <Bold>Você</Bold> pagou a <Bold>@Cornelius</Bold>
+            <Bold>Você</Bold> pagou a <Bold>@Drª. Zyra Hunter</Bold>
           </Description>
         </CardHeader>
 
         <CardBody>
-          <UserName>Marcos Barker</UserName>
+        <UserName>Cornelius McDowall</UserName>
         </CardBody>
 
         <CardFooter>
