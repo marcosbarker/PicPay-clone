@@ -8,8 +8,6 @@ Tipo de navegação
  Import
  import 'react-native-gesture-handler';
 
-
-
 expo vector icons
 https://icons.expo.fyi/
 
