@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Switch } from 'react-native';
 import { UseTicketButton, Container, AddButton, AddButton2, AddLabel,
          CardBody, Img, CardInfo, CardDetails, CardLabel, CardTitle, 
@@ -11,6 +11,13 @@ import { Feather, FontAwesome5, FontAwesome, MaterialCommunityIcons,
          AntDesign } from '@expo/vector-icons';
 
 export default function Finance() {
+  const [isVisible, setVisible] = useState(true);
+
+  //troca de estado baseado no estado atual
+  function visibilityMoney() {
+    setVisible((prevState) => !prevState);
+  }
+
   return (
     <Wrapper>
       <Container>
@@ -19,11 +26,11 @@ export default function Finance() {
             <Title>Saldo disponível</Title>
             <BalanceContainer>
               <Value>
-                R$ <Bold>228.000,00</Bold>
+                R$ <Bold>{isVisible ? '228.000,00' : '-------------'}</Bold>
               </Value>
-              <SecretButton> 
+              <SecretButton onPress={visibilityMoney}> 
                 <Feather
-                  name="eye"
+                  name={isVisible ? 'eye' : 'eye-off'}
                   size={28}
                   color="white"
                 />
