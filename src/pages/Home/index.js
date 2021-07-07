@@ -3,6 +3,7 @@ import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons'
 import { Wrapper, Header, Balance, BalanceTitle, BalanceContainer, Container } from './style';
 import Suggestions from '../../components/Suggestions';
 import Publi from '../../components/Publi';
+import Services from '../../components/Services';
 import Activities from '../../components/Activities';
 
 export default function Home() {
@@ -29,7 +30,8 @@ export default function Home() {
 
         <Suggestions />
         <Activities />
-         <Publi />
+        <Publi />
+        <Services />
 
       </Container>
     </Wrapper>
