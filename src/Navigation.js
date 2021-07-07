@@ -31,6 +31,7 @@ const icons = {
 export default function Navigation() {
   return (
     <Tab.Navigator
+      initialRouteName="Finance"
       screenOptions={({route, navigation}) => ({
         tabBarIcon: ({color, size, focused}) => {
 
