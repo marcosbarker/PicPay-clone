@@ -161,3 +161,18 @@ export const AddButton2 = styled.TouchableOpacity`
   align-items: center;
   flex-direction: row;
 `;
+
+export const UseTicketButton = styled.TouchableOpacity`
+  flex-direction: row;
+`;
+
+export const UseTicketLabel = styled.Text`
+  color: #1AB563;
+  text-decoration: underline;
+  font-size: 15px;
+`;
+
+export const UseTicketContainer = styled.View`
+  margin: 20px 0 20px 0;
+  align-items: center;
+`;

@@ -1,12 +1,14 @@
 import React from 'react';
 import { Switch } from 'react-native';
-import { Container, AddButton, AddButton2, AddLabel, CardBody, Img, CardInfo, 
-         CardDetails, CardLabel, CardTitle, Card, FormsPayTitle, 
-         FormsPay, UseBalance, UseBalanceTitle, Action, Actions, 
-         ActionLabel, Info, SecretButton, BalanceContainer, Bold, 
-         Value, Wrapper, HeaderContainer, Header, Title } from './style';
+import { UseTicketButton, Container, AddButton, AddButton2, AddLabel,
+         CardBody, Img, CardInfo, CardDetails, CardLabel, CardTitle, 
+         Card, FormsPayTitle, FormsPay, UseBalance, UseBalanceTitle, 
+         Action, Actions, ActionLabel, Info, SecretButton, BalanceContainer,
+         Bold, Value, Wrapper, HeaderContainer, Header, Title, UseTicketLabel,
+         UseTicketContainer } from './style';
 import credicard from '../../assets/images/credit-card.png'
-import { Feather, FontAwesome5, FontAwesome, AntDesign } from '@expo/vector-icons';
+import { Feather, FontAwesome5, FontAwesome, MaterialCommunityIcons,
+         AntDesign } from '@expo/vector-icons';
 
 export default function Finance() {
   return (
@@ -95,6 +97,18 @@ export default function Finance() {
             </CardLabel>
             </AddButton2>
           </Card>
+          <UseTicketContainer>
+                <UseTicketButton>
+            <MaterialCommunityIcons 
+              name="ticket-confirmation-outline"
+              size={24}
+              color="#1AB563"
+            />
+            <UseTicketLabel>
+              Usar código promocional
+            </UseTicketLabel>
+          </UseTicketButton>
+          </UseTicketContainer>
         </FormsPay>
       </Container>
     </Wrapper>
